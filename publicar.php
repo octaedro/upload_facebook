@@ -1,6 +1,6 @@
 <?php
-//require_once($_SERVER["DOCUMENT_ROOT"] . '/facebook-php-sdk-master/src/facebook.php'); 
 require_once('post.php'); 
-
-$un_post = new Post();
-var_dump($un_post);
+$mensaje = 'Un wallpaper http://fernandomarichal.com/api/upload_facebook/ben10.jpg';
+$un_post = new Post($mensaje);
+$ret = $un_post->publicarEnFacebook();
+var_dump($ret);
