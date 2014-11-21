@@ -6,5 +6,5 @@ $token = $_GET['token'];
 $mensaje = 'Un wallpaper http://fernandomarichal.com/api/upload_facebook/ben10.jpg';
 $un_post = new Post($secret,$mensaje);
 //var_dump($un_post);
-$ret = $un_post->publicarEnFacebook();
+$ret = $un_post->publicarEnFacebook($token);
 var_dump($ret);
