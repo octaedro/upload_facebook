@@ -19,7 +19,7 @@ class Post{
                 'access_token' => 'e414c7ecee6cc9f6f1f3ad6b7b67fdad',
                 'message' => $this->mensaje);
 
-        $res = $this->facebook->api('/Juegos-de-Ben10/359335437580378/feed', 'POST', $req);
+        $res = $this->facebook->api('/pages/Juegos-de-Ben10/359335437580378/feed', 'POST', $req);
         return $res;
     }
 }
